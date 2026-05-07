@@ -1,0 +1,72 @@
+.tm-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: var(--background-secondary);
+}
+
+.tm-header {
+    padding: 15px;
+    background: var(--background-primary-alt);
+    border-bottom: 1px solid var(--background-modifier-border);
+    font-weight: bold;
+}
+
+.tm-list {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+.tm-task-card {
+    background: var(--background-primary);
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid var(--background-modifier-border);
+}
+
+.tm-task-card.is-completed {
+    opacity: 0.5;
+    filter: grayscale(0.5);
+}
+
+.tm-main-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.tm-info { flex-grow: 1; }
+.tm-title { font-weight: 600; display: block; }
+.tm-sub-stat { font-size: 0.7em; color: var(--text-accent); margin-top: 2px; }
+
+/* Sub-task UI in Modal */
+.tm-subtask-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.tm-subtask-input {
+    flex-grow: 1;
+    font-size: 0.9em;
+}
+
+.tm-fab {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background: var(--interactive-accent);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    z-index: 10;
+}
