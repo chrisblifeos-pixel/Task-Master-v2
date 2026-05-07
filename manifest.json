@@ -1,0 +1,9 @@
+{
+  "id": "task-master",
+  "name": "Task Master",
+  "version": "1.2.0",
+  "minAppVersion": "0.15.0",
+  "description": "Task manager with nested sub-tasks and mobile sidebar support.",
+  "author": "Gemini",
+  "isDesktopOnly": false
+}
